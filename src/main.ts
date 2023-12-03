@@ -18,15 +18,7 @@ async function main(problem: number, part: number, mode: "real" | "test") {
   console.log("Part:", part);
   console.log("Mode:", mode);
 
-  const data = await new Promise<string>((resolve, reject) => {
-    fs.readFile(`data/${problem}/${mode}/${part}.txt`, "utf8", (err, data) => {
-      if (err) {
-        reject(err);
-        return;
-      }
-      resolve(data);
-    });
-  });
+  const data = fs.readFileSync(`data/${problem}/${mode}/${part}.txt`, "utf8");
 
   const result = solutions[problem][part](data);
 
