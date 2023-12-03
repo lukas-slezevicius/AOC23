@@ -1,6 +1,7 @@
 import fs from "fs";
 import { problem1Part1, problem1part2 } from "./1";
 import { problem2part1, problem2part2 } from "./2";
+import { problem3part1, problem3part2 } from "./3";
 
 const solutions: Record<number, Record<number, (data: string) => any>> = {
   1: {
@@ -10,6 +11,10 @@ const solutions: Record<number, Record<number, (data: string) => any>> = {
   2: {
     1: problem2part1,
     2: problem2part2,
+  },
+  3: {
+    1: problem3part1,
+    2: problem3part2,
   },
 };
 
