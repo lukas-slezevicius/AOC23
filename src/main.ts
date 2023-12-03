@@ -13,7 +13,7 @@ const solutions: Record<number, Record<number, (data: string) => any>> = {
   },
 };
 
-async function main(problem: number, part: number, mode: "real" | "test") {
+function main(problem: number, part: number, mode: "real" | "test") {
   console.log("Problem:", problem);
   console.log("Part:", part);
   console.log("Mode:", mode);
