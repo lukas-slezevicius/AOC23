@@ -2,6 +2,9 @@ import fs from "fs";
 import { problem1Part1, problem1part2 } from "./1";
 import { problem2part1, problem2part2 } from "./2";
 import { problem3part1, problem3part2 } from "./3";
+import { problem4part1, problem4part2 } from "./4";
+import { problem5part1, problem5part2 } from "./5";
+import { problem6part1, problem6part2 } from "./6";
 
 const solutions: Record<number, Record<number, (data: string) => any>> = {
   1: {
@@ -15,6 +18,18 @@ const solutions: Record<number, Record<number, (data: string) => any>> = {
   3: {
     1: problem3part1,
     2: problem3part2,
+  },
+  4: {
+    1: problem4part1,
+    2: problem4part2,
+  },
+  5: {
+    1: problem5part1,
+    2: problem5part2,
+  },
+  6: {
+    1: problem6part1,
+    2: problem6part2,
   },
 };
 
